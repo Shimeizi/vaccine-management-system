@@ -4,20 +4,20 @@ A C project developed for a programming course.
 
 ## 📖 Overview
 
-This project implements a vaccine management system that manages vaccine batches and inoculation records through a command-line interface.
+This project implements a command-line vaccine management system.
 
-The system supports vaccine registration, dose administration, inoculation tracking, batch management and simulated date progression.
+The system manages vaccine batches and inoculation records, allowing users to register vaccine batches, administer doses, track inoculations and manage vaccine availability through a set of commands.
 
 ## ✨ Features
 
 * 💉 Register vaccine batches
-* 📋 List available vaccines
-* 🧑 Manage vaccine inoculations
-* 🚫 Remove vaccine availability
-* 🗑️ Delete vaccination records
-* 🔎 Query user inoculations
+* 📋 List available vaccine batches
+* 🧑 Record vaccine inoculations
+* 🚫 Remove vaccine batch availability
+* 🗑️ Delete inoculation records
+* 🔎 Query inoculations by user
 * 📅 Simulated date management
-* 🧠 Dynamic memory allocation and management
+* 🧠 Dynamic memory management
 
 ## 🛠️ Built With
 
@@ -26,7 +26,7 @@ The system supports vaccine registration, dose administration, inoculation track
 
 ## ⚙️ Compilation
 
-Compile the program with:
+Compile the project using:
 
 ```bash
 gcc -O3 -Wall -Wextra -Werror -Wno-unused-result -o proj *.c
@@ -34,7 +34,7 @@ gcc -O3 -Wall -Wextra -Werror -Wno-unused-result -o proj *.c
 
 ## ▶️ Running
 
-Run the program by redirecting an input file:
+Run the program with an input file:
 
 ```bash
 ./proj < test.in > test.myout
@@ -48,7 +48,7 @@ Compare your output with the expected output:
 diff test.out test.myout
 ```
 
-Alternatively, use the provided public tests:
+You can also run the provided public tests using:
 
 ```bash
 make
@@ -56,7 +56,7 @@ make
 
 ## 🐞 Debugging
 
-For debugging with tools such as `gdb` or `valgrind`, compile with:
+For debugging with tools such as `gdb` or `valgrind`, compile the project with:
 
 ```bash
 gcc -g -Wall -Wextra -Werror -Wno-unused-result -o proj *.c
